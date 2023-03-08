@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Flutter layout demo',
       home: MyHomePage(),
     );
@@ -15,9 +15,10 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return _MyHomePageState();
   }
 }
@@ -33,7 +34,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement createState
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
